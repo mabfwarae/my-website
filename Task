@@ -12,7 +12,7 @@ public class Main {
 
         System.out.print("Enter number of tasks: ");
         int n = sc.nextInt();
-        sc.nextLine(); // clear leftover newline
+        sc.nextLine();
 
         for (int i = 1; i <= n; i++) {
             System.out.print("Enter description for Task " + i + ": ");
@@ -20,7 +20,7 @@ public class Main {
 
             System.out.print("Enter priority (1-10) for Task " + i + ": ");
             int prio = sc.nextInt();
-            sc.nextLine(); // clear leftover newline after nextInt()
+            sc.nextLine();
 
             taskQueue.add(new Task(desc, prio));
         }
